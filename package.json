@@ -16,7 +16,7 @@
     "express",
     "ejs"
   ],
-  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
+  "author": "Jason Wong <jason.wong2@hva.nl>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/fdnd-task/server-side-rendering/issues"
