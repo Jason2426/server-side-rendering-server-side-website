@@ -1,8 +1,8 @@
-
 :root {
-    --main-bg-color : ##F7F7F5;
-    --text-color : #000000;
+    --main-bg-color: ##F7F7F5;
+    --text-color: #000000;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -13,3 +13,14 @@ body {
     color: var(--text-color);
 }
 
+/* Nav styling */
+
+nav {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40%;
+}
