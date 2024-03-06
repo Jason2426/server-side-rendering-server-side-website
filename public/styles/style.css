@@ -1,6 +1,7 @@
 
 :root {
-    
+    --main-bg-color : ##F7F7F5;
+    --text-color : #000000;
 }
 * {
     margin: 0;
@@ -8,6 +9,7 @@
 }
 
 body {
-    background-color: black;
-
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
 }
+
