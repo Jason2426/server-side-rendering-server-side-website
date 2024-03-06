@@ -22,11 +22,24 @@ app.set('views', './views');
 // Use the 'public' directory for static resources
 app.use(express.static('public'));
 
-// GET route for the index page
+
+// GET routes for the pages
 app.get('/', function (request, response) {
-    // Render the index page using the 'index.ejs' template
-    response.render('index');
+    // Render the home page using the 'home.ejs' template
+    response.render('home');
 });
+
+app.get('/categories', function (request, response) {
+    // Render the home page using the 'home.ejs' template
+    response.render('categories');
+});
+
+app.get('/article', function (request, response) {
+    // Render the home page using the 'home.ejs' template
+    response.render('article');
+});
+
+//
 
 // POST route for the index page
 app.post('/', function (request, response) {
@@ -34,12 +47,11 @@ app.post('/', function (request, response) {
     response.redirect(303, '/');
 });
 
-
 // Set the port number for express to listen on
 app.set('port', process.env.PORT || 8000);
 
 // Start express and listen on the specified port
 app.listen(app.get('port'), function () {
     // Log a message to the console with the port number
-    console.log(`Application started on http://localhost:${app.get('port')}`);
+    console.log(`App started drayyyyyy : http://localhost:${app.get('port')}`);
 });
