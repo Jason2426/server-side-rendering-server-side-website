@@ -25,6 +25,23 @@ app.use(express.static('public'));
 // Fetch posts from the API
 const postsUrl = `${apiUrl}/posts`;
 
+app.get('/', function (request, response){
+    // Fetch posts concurrently
+    Promise.all([fetchJson(postsUrl)])
+    .then(([postsData]) => {
+        // Render index.ejs and pass the fetched data as 'posts' variables
+        response.render('home', { posts: postsData });
+        // To check fetched Data
+        console.log(postsData)
+    })
+    .catch((error) => {
+        // Handle error if fetching data fails
+        console.error('Error fetching data:', error);
+        response.status(500).send('Error fetching data!');
+    });
+    });
+
+
 app.get('/allPosts', function (request, response){
 // Fetch posts concurrently
 Promise.all([fetchJson(postsUrl)])
@@ -59,28 +76,6 @@ app.get('/categories', function (request, response){
         console.error('Error fetching data:', error);
         response.status(500).send('Error fetching data!');
     });
-});
-
-app.get('/', function (request, response){
-    // Fetch posts concurrently
-    Promise.all([fetchJson(postsUrl)])
-    .then(([postsData]) => {
-        // Render index.ejs and pass the fetched data as 'posts' variables
-        response.render('home', { posts: postsData });
-        // To check fetched Data
-        console.log(postsData)
-    })
-    .catch((error) => {
-        // Handle error if fetching data fails
-        console.error('Error fetching data:', error);
-        response.status(500).send('Error fetching data!');
-    });
-    });
-
-
-// GET route for the index page
-app.get('/', function (request, response) {
-    response.render('home', {})
 });
 
 
