@@ -1,7 +1,25 @@
 <%- include('./partials/head') %>
 
+<!-- Trending and latest articles -->
+
     <main>
-        
+        <ul>
+        <% posts.forEach(post=> { %>
+            <article class="">
+            <li>
+                <a href="/post/<% post.id %>">
+                    <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                    <h2>
+                        <%= post.title.rendered %>
+                    </h2>
+                    <p>
+                        author : <%= post.yoast_head_json.author %>
+                    </p>
+                </a>
+            </li>
+             </article>
+            <% }); %>
+        </ul>
 
     </main>
 

@@ -1,0 +1,24 @@
+<%- include('./partials/head') %>
+
+
+    <ul>
+        <% posts.forEach(post=> { %>
+            <li>
+                <a href="/allPosts/<% post.id %>">
+                    <p>
+                        id : <%= post.id %>,
+                        category : <%= post.categories %>
+                        author : <%= post.yoast_head_json.author %>
+                        media : <%= post.featured_media %>
+                    </p>
+                    <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                    <p>
+                        <%= post.content.rendered %>
+                    </p>
+                </a>
+            </li>
+            <% }); %>
+    </ul>
+
+
+    <%- include('./partials/foot') %>

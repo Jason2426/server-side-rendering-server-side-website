@@ -22,22 +22,65 @@ app.set('views', './views');
 // Use the 'public' directory for static resources
 app.use(express.static('public'));
 
-    // Fetch posts from the API
-    const postsUrl = `${apiUrl}/posts`;
+// Fetch posts from the API
+const postsUrl = `${apiUrl}/posts`;
+
+app.get('/allPosts', function (request, response){
+// Fetch posts concurrently
+Promise.all([fetchJson(postsUrl)])
+.then(([postsData]) => {
+    // Render index.ejs and pass the fetched data as 'posts' variables
+    response.render('allPosts', { posts: postsData });
+    // To check fetched Data
+    console.log(postsData)
+})
+.catch((error) => {
+    // Handle error if fetching data fails
+    console.error('Error fetching data:', error);
+    response.status(500).send('Error fetching data!');
+});
+});
+
+
+// Fetch categories from the API
+const categoriesURL = `${apiUrl}/categories`;
+
+app.get('/categories', function (request, response){
+    // Fetch posts concurrently
+    Promise.all([fetchJson(categoriesURL)])
+    .then(([categoryData]) => {
+        // Render index.ejs and pass the fetched data as 'posts' variables
+        response.render('categories', { categories: categoryData });
+        //Check fetch data
+        console.log(categoryData)
+    })
+    .catch((error) => {
+        // Handle error if fetching data fails
+        console.error('Error fetching data:', error);
+        response.status(500).send('Error fetching data!');
+    });
+});
+
+app.get('/', function (request, response){
+    // Fetch posts concurrently
+    Promise.all([fetchJson(postsUrl)])
+    .then(([postsData]) => {
+        // Render index.ejs and pass the fetched data as 'posts' variables
+        response.render('home', { posts: postsData });
+        // To check fetched Data
+        console.log(postsData)
+    })
+    .catch((error) => {
+        // Handle error if fetching data fails
+        console.error('Error fetching data:', error);
+        response.status(500).send('Error fetching data!');
+    });
+    });
+
 
 // GET route for the index page
 app.get('/', function (request, response) {
-    // Fetch posts and users concurrently
-    Promise.all([fetchJson(postsUrl)])
-        .then(([postsData]) => {
-            // Render index.ejs and pass the fetched data as 'posts' and 'users' variables
-            response.render('home', { posts: postsData});
-        })
-        .catch((error) => {
-            // Handle error if fetching data fails
-            console.error('Error fetching data:', error);
-            response.status(500).send('Error fetching data!');
-        });
+    response.render('home', {})
 });
 
 
@@ -51,7 +94,7 @@ app.post('/', function (request, response) {
 // Set the port number for express to listen on
 app.set('port', process.env.PORT || 8000);
 
-// Start express and listen on the specified port
+// Start express and listen on the specified port : 8000
 app.listen(app.get('port'), function () {
     // Log a message to the console with the port number
     console.log(`Drizzydrayyyyyy yo shitt is running on : http://localhost:${app.get('port')}`);

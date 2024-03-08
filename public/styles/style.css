@@ -24,3 +24,18 @@ nav {
 .logo {
     width: 40%;
 }
+
+/* Article styling */
+
+article {
+    justify-content: end;
+}
+
+.article-img {
+    width: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
