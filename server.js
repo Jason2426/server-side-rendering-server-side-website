@@ -23,7 +23,9 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 // Fetch posts from the API
-const postsUrl = `${apiUrl}/posts`;
+const postsUrl = `${apiUrl}/posts?per_page=27`;
+
+const allpostsUrl = `${apiUrl}/posts?per_page=100`;
 
 app.get('/', function (request, response){
     // Fetch posts concurrently
@@ -44,7 +46,7 @@ app.get('/', function (request, response){
 
 app.get('/allPosts', function (request, response){
 // Fetch posts concurrently
-Promise.all([fetchJson(postsUrl)])
+Promise.all([fetchJson(allpostsUrl)])
 .then(([postsData]) => {
     // Render index.ejs and pass the fetched data as 'posts' variables
     response.render('allPosts', { posts: postsData });
@@ -60,7 +62,8 @@ Promise.all([fetchJson(postsUrl)])
 
 
 // Fetch categories from the API
-const categoriesURL = `${apiUrl}/categories`;
+const categoriesURL = `${apiUrl}/categories?per_page=10`;
+
 
 app.get('/categories', function (request, response){
     // Fetch posts concurrently

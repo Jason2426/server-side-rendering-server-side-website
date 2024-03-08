@@ -8,7 +8,9 @@
             <article class="">
             <li>
                 <a href="/post/<% post.id %>">
-                    <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                    <div class="img-div">
+                        <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                    </div>
                     <h2>
                         <%= post.title.rendered %>
                     </h2>

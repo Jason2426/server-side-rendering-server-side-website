@@ -29,11 +29,16 @@ nav {
 
 article {
     justify-content: end;
+
+    .img-div{
+        width: 70%;
+    }
+
+    .article-img {
+        object-fit: cover;
+    }
 }
 
-.article-img {
-    width: 75%;
-}
 
 a {
     text-decoration: none;
