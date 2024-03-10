@@ -25,22 +25,3 @@ nav {
     width: 40%;
 }
 
-/* Article styling */
-
-article {
-    justify-content: end;
-
-    .img-div{
-        width: 70%;
-    }
-
-    .article-img {
-        object-fit: cover;
-    }
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
