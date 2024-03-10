@@ -1,11 +1,11 @@
-:root {
-    --main-bg-color: ##F7F7F5;
-    --text-color: #000000;
-}
-
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-bg-color: ##F7F7F5;
+    --text-color: #000000;
 }
 
 body {

@@ -1,37 +1,43 @@
 <%- include('./partials/head') %>
 
-<link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/home.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-<%- include('./partials/navbar') %>
+        <%- include('./partials/navbar') %>
 
-<!-- Trending and latest articles -->
+            <!-- Trending and latest articles -->
 
-    <main>
-        <ul>
-        <% posts.forEach(post=> { %>
-            <article>
-            <li>
-                <a href="/post/<%= post.slug %>">
-                    <div class="img-div">
-                        <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
-                    </div>
-                    <h2>
-                        <%= post.title.rendered %>
+            <main>
+                <ul>
+                    <% posts.forEach(post=> { %>
+                        <article class="">
+                            <li>
+                                <a href="/post/<%= post.slug %>">
+                                    <div class="img-div">
+                                        <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                                    </div>
+                                    <h2 class="article-title">
+                                        <%= post.title.rendered %>
+                                    </h2>
+                                    <section class="article-info">
 
-                    </h2>
-                    <p>
-                        author : <%= post.yoast_head_json.author %>
-                    </p>
-                </a>
-            </li>
-             </article>
-            <% }); %>
-        </ul>
 
-    </main>
+                                        <p class="author">
+                                            <%= post.yoast_head_json.author %>
+                                        </p>
+                                        <p class="date">
+                                            <%= post.date_gmt %>
+                                        </p>
+                                    </section>
+                                </a>
+                            </li>
+                        </article>
+                        <% }); %>
+                </ul>
 
-    <%- include('./partials/foot') %>
+            </main>
+
+            <%- include('./partials/foot') %>

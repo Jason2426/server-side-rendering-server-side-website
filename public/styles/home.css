@@ -1,4 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+/* Main styling */
+
+main {
+    margin-top: 10%;
+}
+
+
+/* Article styling */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+article {
+    margin: 3.5%;
+    border: 1.5px solid black;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.article-title {
+    margin: 3.75%;
+}
+
+.article-info {
+    margin: 10% 3.75% 4% 3.75%;
+    display: flex;
+    justify-content: space-between;
+    border: 1.5px solid black;
+    /* padding: 5%; */
+}
+
+
+li {
+    font-weight: bolder;
 }
