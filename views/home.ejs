@@ -16,15 +16,11 @@
                         <article class="">
                             <li>
                                 <a href="/post/<%= post.slug %>">
-                                    <div class="img-div">
                                         <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
-                                    </div>
                                     <h2 class="article-title">
                                         <%= post.title.rendered %>
                                     </h2>
                                     <section class="article-info">
-
-
                                         <p class="author">
                                             <%= post.yoast_head_json.author %>
                                         </p>
@@ -40,4 +36,4 @@
 
             </main>
 
-            <%- include('./partials/foot') %>
+    <%- include('./partials/foot') %>

@@ -32,15 +32,15 @@ article {
 }
 
 .article-title {
-    margin: 3.75%;
+    margin: 4%;
 }
 
 .article-info {
-    margin: 10% 3.75% 4% 3.75%;
+    margin: 5% 4% 5% 4%;
     display: flex;
     justify-content: space-between;
-    border: 1.5px solid black;
-    /* padding: 5%; */
+    /* border: 1.5px solid black;
+    padding: 5%; */
 }
 
 
