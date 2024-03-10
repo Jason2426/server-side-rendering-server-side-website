@@ -5,14 +5,15 @@
     <main>
         <ul>
         <% posts.forEach(post=> { %>
-            <article class="">
+            <article>
             <li>
-                <a href="/post/<% post.id %>">
+                <a href="/post/<%= post.slug %>">
                     <div class="img-div">
                         <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
                     </div>
                     <h2>
                         <%= post.title.rendered %>
+
                     </h2>
                     <p>
                         author : <%= post.yoast_head_json.author %>

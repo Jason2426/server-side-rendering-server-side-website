@@ -1,5 +1,15 @@
 <%- include('./partials/head') %>
 
  <!-- One post to read -->
+<section>
+    <h2><%= post[0].title.rendered %></h2>
+        <ul>
+            <li><%= post[0].yoast_head_json.author %></li>
+            <li><%= post[0].date_gmt %></li>
+            <li><%= post["Geschatte leestijd"] %></li>
+        </ul>
+        <img src="<%= post[0].jetpack_featured_media_url %>">
+        <p><%= post[0].content.rendered %></p>
+</section>
 
 <%- include('./partials/foot') %>
