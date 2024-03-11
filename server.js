@@ -26,6 +26,7 @@ app.use(express.static('public'));
 const postsUrl = `${apiUrl}/posts?per_page=27`;
 const allpostsUrl = `${apiUrl}/posts?per_page=100`;
 const onePostURL = `${apiUrl}/posts?slug=`;
+const categoriesURL = `${apiUrl}/categories?per_page=50`;
 
 // Homepage route
 app.get('/', function (request, response) {
@@ -61,9 +62,6 @@ app.get('/allPosts', function (request, response) {
         });
 });
 
-
-// Fetch categories from the API
-const categoriesURL = `${apiUrl}/categories?per_page=50`;
 
 app.get('/categories', function (request, response) {
     // Fetch posts concurrently

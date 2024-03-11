@@ -11,12 +11,10 @@
             <!-- Trending and latest articles -->
 
             <main>
-                <ul>
                     <% posts.forEach(post=> { %>
                         <article class="">
-                            <li>
                                 <a href="/post/<%= post.slug %>">
-                                        <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                                    <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
                                     <h2 class="article-title">
                                         <%= post.title.rendered %>
                                     </h2>
@@ -24,16 +22,13 @@
                                         <p class="author">
                                             <%= post.yoast_head_json.author %>
                                         </p>
-                                        <p class="date">
-                                            <%= post.date_gmt %>
+                                        <p class="read-time">
+                                            <%= post.yoast_head_json.twitter_misc["Geschatte leestijd"] %>
                                         </p>
                                     </section>
                                 </a>
-                            </li>
                         </article>
                         <% }); %>
-                </ul>
-
             </main>
 
-    <%- include('./partials/foot') %>
+            <%- include('./partials/foot') %>

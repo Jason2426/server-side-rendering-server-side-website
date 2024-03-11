@@ -1,24 +1,37 @@
 <%- include('./partials/head') %>
 
-<link rel="stylesheet" href="/styles/detail.css">
+    <link rel="stylesheet" href="/styles/detail.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-<%- include('./partials/navbar') %>
+        <%- include('./partials/navbar') %>
 
- <!-- One post to read -->
+            <!-- One post to read -->
+            <main>
+                <section class="post">
+                    <h2>
+                        <%= post[0].title.rendered %>
+                    </h2>
+                    <ul>
+                        <li>
+                            <%= post[0].yoast_head_json.author %>
+                        </li>
+                        <li>
+                            <%= post[0].date_gmt %>
+                        </li>
+                        <li>
+                            <%= post["Geschatte leestijd"] %>
+                        </li>
+                    </ul>
+                    <div>
+                        <img src="<%= post[0].jetpack_featured_media_url %>" class="detail-img">
+                    </div>
+                    <p>
+                        <%= post[0].content.rendered %>
+                    </p>
+                </section>
+            </main>
 
-<section class="post">
-    <h2><%= post[0].title.rendered %></h2>
-        <ul>
-            <li><%= post[0].yoast_head_json.author %></li>
-            <li><%= post[0].date_gmt %></li>
-            <li><%= post["Geschatte leestijd"] %></li>
-        </ul>
-        <img src="<%= post[0].jetpack_featured_media_url %>">
-        <p><%= post[0].content.rendered %></p>
-</section>
-
-<%- include('./partials/foot') %>
+            <%- include('./partials/foot') %>

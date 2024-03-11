@@ -1,26 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-/* Main styling */
-
-main {
-    margin-top: 10%;
-}
-
-
 /* Article styling */
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-ul {
-    list-style: none;
-}
 
 article {
     margin: 3.5%;
@@ -29,6 +7,9 @@ article {
 
 .article-img {
     width: 100%;
+    height: 12.5em;
+    object-fit: cover;
+    /* Maintain aspect ratio and crop if necessary */
 }
 
 .article-title {
@@ -39,11 +20,111 @@ article {
     margin: 5% 4% 5% 4%;
     display: flex;
     justify-content: space-between;
-    /* border: 1.5px solid black;
-    padding: 5%; */
 }
 
+@media (min-width: 31.25em) {
 
-li {
-    font-weight: bolder;
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        width: calc(50% - 5%);
+        /* Adjusted width to accommodate margins and borders */
+        margin: 1.25%;
+        /* Reapply margin for larger screens */
+        /* height: 100%; */
+    }
+
+    .article-img {
+        height: 9em;
+        /* Fixed height for image */
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size: .85em;
+
+        &.author {
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        &.read-time {
+            color: rgb(111, 111, 111);
+        }
+    }
+}
+
+@media (min-width: 41.5em) {
+
+    .article-img {
+        height: calc(10em + 2em)
+            /* Fixed height for image */
+    }
+}
+
+@media (min-width: 45em) {
+
+    .article-img {
+        height: calc(10em + 4em)
+            /* Fixed height for image */
+    }
+
+    h2 {
+        font-size: calc(1.25em + 0.3em)
+    }
+}
+
+@media (min-width: 56.81em) {
+
+    article {
+        width: calc(50% - 5%);
+        /* Adjusted width to accommodate margins and borders */
+        margin: 1.25%;
+        /* Reapply margin for larger screens */
+        /* height: 100%; */
+    }
+
+    .article-img {
+        height: calc(10em + 10em)
+            /* Fixed height for image */
+    }
+
+    h2 {
+        font-size: calc(1.25em + 0.5em)
+    }
+
+}
+
+@media (min-width: 68.7em) {
+
+
+    main {
+        margin-top: 6%;
+    }
+
+    article {
+        width: calc(30% - 2%);
+        /* Adjusted width to accommodate margins and borders */
+        margin: 1%;
+        /* Reapply margin for larger screens */
+        /* height: 100%; */
+    }
+
+    .article-img {
+        height: calc(10em + 6em)
+            /* Fixed height for image */
+    }
+
+    h2 {
+        font-size: calc(1.25em + 0.25em)
+    }
+
+
 }
