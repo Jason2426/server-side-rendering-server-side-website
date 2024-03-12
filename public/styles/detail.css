@@ -3,13 +3,49 @@
     padding: 0;
 }
 
-section {
-    margin: 3.5%;
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    align-items: center;
+    margin: 5%;
+    margin-top: calc(-7.5%);
 }
 
-.detail-img {
-    width: 80%;
+.post {
+    margin: 10%;
+    width: 100%;
+}
+
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 5%;
+}
+
+.post-img {
+    height: 12em;
+    width: 100%;
+    border-radius: .25em;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info {
+    margin: 4% 0% 4% 0%;
+}
+
+li {
+    font-size: 0.8em;
+    margin: 2%;
+}
+
+p {
+    margin-top: 5%;
 }

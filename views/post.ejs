@@ -14,19 +14,21 @@
                     <h2>
                         <%= post[0].title.rendered %>
                     </h2>
+                    <section class="post-info">
                     <ul>
-                        <li>
+                        <li class="author">
                             <%= post[0].yoast_head_json.author %>
                         </li>
-                        <li>
+                        <li class="date">
                             <%= post[0].date_gmt %>
                         </li>
-                        <li>
-                            <%= post["Geschatte leestijd"] %>
+                        <li class="read-time">
+                            <%= post[0].yoast_head_json.twitter_misc["Geschatte leestijd"] %>
                         </li>
                     </ul>
+                    </section>
                     <div>
-                        <img src="<%= post[0].jetpack_featured_media_url %>" class="detail-img">
+                        <img src="<%= post[0].jetpack_featured_media_url %>" class="post-img">
                     </div>
                     <p>
                         <%= post[0].content.rendered %>
