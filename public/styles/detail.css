@@ -25,7 +25,7 @@ h2 {
 }
 
 .post-img {
-    height: 12em;
+    height: 13em;
     width: 100%;
     border-radius: .25em;
     object-fit: cover;
@@ -34,7 +34,9 @@ h2 {
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin: 0% 3% 0% 3%;
+    justify-content: center;
 }
 
 .post-info {
@@ -42,10 +44,109 @@ ul {
 }
 
 li {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 2%;
+
+    &.author {
+        font-weight: bold;
+    }
+
+    &.read-time {
+        font-weight: 700;
+        color: rgb(99, 99, 101);
+    }
 }
 
 p {
     margin-top: 5%;
+}
+
+@media (min-width: 28em) {
+
+    .post-img {
+        height: calc(13em + 4em);
+    }
+}
+
+@media (min-width: 34em) {
+
+    h2 {
+        margin-bottom: 0%;
+    }
+
+    .post-img {
+        height: calc(13em + 6em);
+    }
+
+    li {
+        margin: 0% 2% 0% 2%;
+    }
+}
+
+@media (min-width: 36em) {
+
+    main {
+        margin: calc(5% + 5%);
+        margin-top: calc(10% - 15%);
+    }
+
+}
+
+@media (min-width: 43em) {
+
+    main {
+        margin: calc(5% + 10%);
+        margin-top: calc(10% - 15%);
+    }
+
+}
+
+@media (min-width: 48em) {
+
+    main {
+        margin: calc(5% + 12%);
+        margin-top: calc(10% - 15%);
+    }
+
+
+}
+
+@media (min-width: 53em) {
+
+    main {
+        margin: calc(5% + 15%);
+        margin-top: calc(10% - 15%);
+    }
+
+
+}
+
+@media (min-width: 58em) {
+
+    main {
+        margin: calc(5% + 17.5%);
+        margin-top: calc(10% - 16%);
+    }
+
+
+}
+
+@media (min-width: 68em) {
+
+    main {
+        margin: calc(5% + 20%);
+        margin-top: calc(10% - 13%);
+    }
+
+
+}
+
+@media (min-width: 75em) {
+
+    main {
+        margin: calc(5% + 22.5%);
+        margin-top: calc(10% - 15%);
+    }
+
+
 }

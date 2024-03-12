@@ -41,3 +41,11 @@ nav {
         width: 20%;
     }
 }
+
+@media (min-width: 75em) {
+
+    .logo {
+        width: calc(20% - 5%)
+    }
+
+}
