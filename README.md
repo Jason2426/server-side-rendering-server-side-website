@@ -8,7 +8,7 @@ Voorpagina, detailpagina en categoriepagina.
 
 * [Kenmerken](https://github.com/Jason2426/server-side-rendering-server-side-website/edit/main/README.md#kenmerken-gebruikte-technieken-)
 
-* [Bronnen]()
+* [Bronnen](https://github.com/Jason2426/server-side-rendering-server-side-website/blob/main/README.md#bronnen-)
 
 ## Beschrijving ❔
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
