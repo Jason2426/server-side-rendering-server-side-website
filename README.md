@@ -15,7 +15,7 @@ Voorpagina, detailpagina en categoriepagina.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twist en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
+De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twists en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
 
 ### [Live Link 🔗](https://embarrassed-lime-coral.cyclic.app/)
 
