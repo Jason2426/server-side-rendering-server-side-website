@@ -6,7 +6,7 @@ Voorpagina, detailpagina en categoriepagina.
 
 * [Beschrijving](https://github.com/Jason2426/server-side-rendering-server-side-website/blob/main/README.md#beschrijving-)
 
-* [Kenmerken]()
+* [Kenmerken](https://github.com/Jason2426/server-side-rendering-server-side-website/edit/main/README.md#kenmerken-gebruikte-technieken-)
 
 * [Bronnen]()
 
