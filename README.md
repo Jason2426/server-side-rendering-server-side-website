@@ -17,9 +17,12 @@ Voorpagina, detailpagina en categoriepagina.
 
 De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twist en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
 
+### [Live Link 🔗](https://embarrassed-lime-coral.cyclic.app/)
+
+> Preview detailpagina
 <img width="1512" alt="Screenshot 2024-03-13 at 17 37 56" src="https://github.com/Jason2426/server-side-rendering-server-side-website/assets/143999883/35579a58-969d-4562-8fd4-cc655adec37d">
 
-### [Live Link 🔗]([https://jason2426.github.io/the-startup-responsive-interactieve-website/](https://embarrassed-lime-coral.cyclic.app/))
+***
 
 ## Kenmerken (gebruikte technieken)
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
@@ -27,9 +30,14 @@ De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met 
 * Mobile first 📱
 * Responsive 
 
+***
+
 ## Bronnen 
 
-* [Bronnen die ik heb gebruikt voor het bouwen]()
+* [RedPers API](https://redpers.nl/wp-json/wp/v2/posts)
+* [JSON Pathfinder](https://jsonpathfinder.com/)
+
+***
 
 ## Licentie
 
