@@ -15,25 +15,24 @@
                         <%- post[0].title.rendered %>
                     </h2>
                     <section class="post-info">
-                    <ul>
-                        <li class="author">
-                            <%= post[0].yoast_head_json.author %>
-                        </li>
-                        <li class="date">
-                            <%= post[0].date_gmt %>
-                        </li>
-                        <li class="read-time">
-                            <%= post[0].yoast_head_json.twitter_misc["Geschatte leestijd"] %>
-                        </li>
-                    </ul>
+                        <ul>
+                            <li class="author">
+                                <%= post[0].yoast_head_json.author %>
+                            </li>
+                            <li class="date">
+                                <%= post[0].date_gmt %>
+                            </li>
+                            <li class="read-time">
+                                <%= post[0].yoast_head_json.twitter_misc["Geschatte leestijd"] %>
+                            </li>
+                        </ul>
                     </section>
-                    <div>
-                        <img src="<%= post[0].jetpack_featured_media_url %>" class="post-img">
-                    </div>
+                    <img src="<%= post[0].jetpack_featured_media_url %>" class="post-img">
+                    </div class="article-content">
                     <p>
-                        <%= post[0].content.rendered %>
+                        <%- post[0].content.rendered %>
                     </p>
                 </section>
             </main>
 
-<%- include('./partials/foot') %>
+            <%- include('./partials/foot') %>

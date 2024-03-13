@@ -36,9 +36,21 @@ nav {
     width: 40%;
 }
 
+@media (min-width: 31.25em) {
+    main {
+        margin-top: 7%;
+    }
+}
+
 @media (min-width: 45em) {
     .logo {
         width: 20%;
+    }
+}
+
+@media (min-width: 60em) {
+    main {
+        margin-top: 6%;
     }
 }
 
