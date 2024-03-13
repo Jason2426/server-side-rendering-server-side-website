@@ -10,7 +10,7 @@ Voorpagina, detailpagina en categoriepagina.
 
 * [Bronnen]()
 
-## Beschrijving
+## Beschrijving ❔
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
@@ -24,18 +24,22 @@ De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met 
 
 ***
 
-## Kenmerken (gebruikte technieken)
+## Kenmerken (gebruikte technieken) 🏃
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
-* 💻 HTML, CSS, Node, Javascript, EJS en Express
+* 💻 HTML, CSS, Node, Javascript, EJS en Express.
 * Mobile first 📱
-* Responsive 
+* Toegankelijk voor mobiele en desktop gebruikers ✔️
 
 ***
 
-## Bronnen 
+## Bronnen 📚
 
 * [RedPers API](https://redpers.nl/wp-json/wp/v2/posts)
+  > API met alle data van Redpers 
 * [JSON Pathfinder](https://jsonpathfinder.com/)
+  > JSON Pathfinder maakt specifieke data zoeken in API makkelijker
+* [Wordpress JSON](https://developer.wordpress.org/rest-api/)
+  > WP JSON alle info voor het werken met een wordpress API
 
 ***
 
