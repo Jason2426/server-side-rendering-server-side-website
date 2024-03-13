@@ -4,7 +4,7 @@ Voorpagina, detailpagina en categoriepagina.
 
 ## Inhoudsopgave 
 
-* [Beschrijving]()
+* [Beschrijving](https://github.com/Jason2426/server-side-rendering-server-side-website/blob/main/README.md#beschrijving-)
 
 * [Kenmerken]()
 
