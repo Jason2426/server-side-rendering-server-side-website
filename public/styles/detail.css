@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -37,10 +38,10 @@ li {
 }
 
 p {
-    margin-top: 4%;
+    margin-top: 2.5%;
 }
 
-/* #region Post styling */ 
+/* #region Post styling */
 
 .post {
     margin: 10%;
@@ -61,7 +62,6 @@ p {
     justify-content: center;
 }
 
-
 .post-info {
     padding: 0;
 }
@@ -75,23 +75,25 @@ p {
 img {
     width: 100%;
     object-fit: cover;
-    /* margin: 5% 0% 5% 0%; */
 }
 
-.article-content {}
-
-/* #region Post styling */ 
-
+/* #endregion Post styling */
 
 /* #region Wordpress elements styling */
 
 .wp-block-heading {
-    margin-top: 5%;
-    font-size: 1.5em;
+    margin-top: 3%;
+    font-size: 1.7em;
+    margin-bottom: -1%;
 }
 
 img:nth-child(1) {
-    margin: 5% 0% 5% 0%; /* images  */
+    margin: 5% 0% 5% 0%;
+    /* images  */
+}
+
+em {
+    font-weight: bold;
 }
 
 /* #endregion */
