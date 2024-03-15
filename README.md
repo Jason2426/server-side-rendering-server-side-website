@@ -1,6 +1,6 @@
 # RedPers redesign/code 📰
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Voorpagina, detailpagina en categoriepagina.
+Voorpagina en detailpagina
 
 ## Inhoudsopgave 
 
@@ -15,7 +15,7 @@ Voorpagina, detailpagina en categoriepagina.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-De pagina's zijn gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twists en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
+De website is gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twists en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
 
 ### [Live Link 🔗](https://embarrassed-lime-coral.cyclic.app/)
 
